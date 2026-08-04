@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinneboina Saikeerthi - Resume</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Lora:wght@400;500;600&display=swap');
+        
+        :root {
+            --slate-deep: #0f172a;
+            --slate-mid: #134e4a;
+            --teal: #2dd4bf;
+            --teal-soft: #5eead4;
+            --glass-bg: rgba(255, 255, 255, 0.1);
+            --glass-border: rgba(255, 255, 255, 0.2);
+            --text: rgba(255, 255, 255, 0.92);
+            --text-muted: rgba(255, 255, 255, 0.75);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Lora', serif;
+            line-height: 1.6;
+            color: var(--text);
+            min-height: 100vh;
+            padding: 40px 20px;
+            background: linear-gradient(-45deg, #0f172a, #134e4a, #0f766e, #115e59, #164e63, #0f172a);
+            background-size: 400% 400%;
+            animation: gradientShift 18s ease infinite;
+            position: relative;
+            overflow-x: hidden;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.08"/><circle cx="75" cy="25" r="1.5" fill="white" opacity="0.06"/><circle cx="50" cy="50" r="1" fill="white" opacity="0.08"/><circle cx="25" cy="75" r="1.5" fill="white" opacity="0.05"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.07"/></pattern></defs><rect width="100%" height="100%" fill="url(%23grain)"/></svg>');
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .glass-card {
+            background: var(--glass-bg);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            padding: 40px;
+            margin-bottom: 30px;
+            box-shadow: 
+                0 8px 32px rgba(0, 0, 0, 0.18),
+                inset 0 1px 0 rgba(255, 255, 255, 0.18);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+        }
+        
+        .glass-card:hover {
+            transform: translateY(-4px);
+            border-color: rgba(45, 212, 191, 0.35);
+            box-shadow: 
+                0 16px 48px rgba(0, 0, 0, 0.22),
+                0 0 24px rgba(45, 212, 191, 0.12),
+                inset 0 1px 0 rgba(255, 255, 255, 0.28);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        
+        .name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #ffffff, var(--teal-soft));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 15px;
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-8px); }
+        }
+        
+        .contact-info {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.05em;
+            color: var(--text-muted);
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            padding: 15px 24px;
+            border-radius: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            display: inline-block;
+        }
+        
+        .contact-info a {
+            color: var(--teal);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-info a:hover {
+            color: var(--teal-soft);
+        }
+        
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.6em;
+            font-weight: 600;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff, var(--teal));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            border-bottom: 1px solid rgba(45, 212, 191, 0.3);
+            padding-bottom: 10px;
+        }
+        
+        .summary {
+            font-size: 1.05em;
+            color: var(--text-muted);
+        }
+        
+        .timeline-item {
+            margin-bottom: 22px;
+        }
+        
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+        
+        .job-title, .project-title {
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+        
+        .company {
+            color: var(--teal);
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            margin-bottom: 4px;
+        }
+        
+        .duration {
+            color: rgba(255, 255, 255, 0.65);
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .description {
+            color: var(--text-muted);
+            font-size: 1em;
+            line-height: 1.7;
+        }
+        
+        .tech-stack {
+            color: var(--teal-soft);
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.95em;
+            margin-bottom: 8px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill {
+            font-family: 'Poppins', sans-serif;
+            background: rgba(45, 212, 191, 0.15);
+            color: white;
+            padding: 8px 14px;
+            border-radius: 12px;
+            font-size: 0.9em;
+            border: 1px solid rgba(45, 212, 191, 0.3);
+            backdrop-filter: blur(8px);
+            transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+        }
+        
+        .skill:hover {
+            transform: translateY(-2px);
+            background: rgba(45, 212, 191, 0.25);
+            border-color: rgba(45, 212, 191, 0.55);
+        }
+        
+        .cert-name {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            color: #ffffff;
+            margin-bottom: 4px;
+        }
+        
+        .cert-org {
+            color: var(--teal);
+            font-family: 'Poppins', sans-serif;
+            margin-bottom: 6px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 20px;
+            font-family: 'Poppins', sans-serif;
+            color: var(--teal);
+            text-decoration: none;
+            padding: 10px 18px;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            transition: border-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .back-link:hover {
+            border-color: rgba(45, 212, 191, 0.45);
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .name {
+                font-size: 2.2em;
+            }
+            .glass-card {
+                padding: 24px;
+            }
+            .contact-info {
+                font-size: 0.95em;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white !important;
+                color: black !important;
+                animation: none;
+            }
+            body::before {
+                display: none;
+            }
+            .glass-card {
+                background: white !important;
+                border: 1px solid #ddd !important;
+                box-shadow: none !important;
+                backdrop-filter: none !important;
+            }
+            .name, .section-title {
+                color: black !important;
+                -webkit-text-fill-color: black !important;
+                background: none !important;
+            }
+            .back-link {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a class="back-link" href="index.html">← Back to Portfolio</a>
+
+        <div class="glass-card">
+            <div class="header">
+                <h1 class="name">Pinneboina Saikeerthi</h1>
+                <div class="contact-info">
+                    +91-8106692491 | <a href="mailto:pinneboinasaikeerthi@gmail.com">pinneboinasaikeerthi@gmail.com</a><br>
+                    <a href="https://linkedin.com/in/saikeerthi319/" target="_blank" rel="noopener">LinkedIn</a> | 
+                    <a href="https://github.com/Saikeerthi319" target="_blank" rel="noopener">GitHub</a> | 
+                    <a href="index.html">Portfolio</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <h2 class="section-title">Professional Summary</h2>
+            <p class="summary">
+                Computer Science Engineering student (Graduating 2027) with hands-on experience developing scalable full-stack web
+                applications and AI-powered automation solutions using Python, Java, JavaScript, React.js, Node.js, Express.js, and SQL.
+                Skilled in designing and integrating REST APIs, developing reusable and maintainable software solutions. Strong foundation
+                in DSA, OOP, DBMS, and problem-solving, with a passion for developing innovative software and learning modern technologies.
+            </p>
+        </div>
+
+        <div class="glass-card">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline-item">
+                <div class="job-title">Bachelor of Technology – Computer Science Engineering</div>
+                <div class="company">Parul Institute of Engineering and Technology</div>
+                <div class="duration">2023 – 2027 | CGPA: 7.56</div>
+                <div class="description">Relevant Coursework: DSA, OS, DBMS, Computer Networks</div>
+            </div>
+            <div class="timeline-item">
+                <div class="job-title">Intermediate</div>
+                <div class="company">Race IIT Academy</div>
+                <div class="duration">2022 – 2023 | 91%</div>
+            </div>
+            <div class="timeline-item">
+                <div class="job-title">Matriculation / SSC</div>
+                <div class="company">Sri Vyshnavi High School</div>
+                <div class="duration">2020 – 2021 | 100%</div>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <h2 class="section-title">Volunteer Experience</h2>
+            <div class="timeline-item">
+                <div class="job-title">Volunteer</div>
+                <div class="company">Rural Development Trust (RDT)</div>
+                <div class="duration">July 2023</div>
+                <div class="description">
+                    Contributed 45 days of community service assisting local schools with educational support and conducting hygiene awareness
+                    programs. Collaborated with volunteers and communities to improve outreach effectiveness in education, healthcare, and rural
+                    development initiatives.
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <h2 class="section-title">Projects</h2>
+            
+            <div class="timeline-item">
+                <div class="project-title">Personalized Multi-Agent Orchestration System for Google Workspace</div>
+                <div class="tech-stack">Python, Node.js, REST APIs, Google Workspace APIs · <a href="https://github.com/Saikeerthi319/Personalized-Multi-Agent-Orchestration-on-Google-workspace-" target="_blank" rel="noopener">GitHub</a></div>
+                <div class="duration">Jan 2026 – Present</div>
+                <div class="description">
+                    Built an intelligent multi-agent orchestration framework that coordinates specialized agents for planning, reasoning,
+                    retrieval, and execution. Automates email summarization, smart scheduling, and document workflows across Gmail, Google Drive,
+                    and Google Calendar using LLM-powered agents and Google Workspace REST APIs.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="project-title">Telecom Customer Churn Analysis</div>
+                <div class="tech-stack">Python, Pandas, SQL, Tableau · <a href="https://github.com/Saikeerthi319/Telecom-Customer-Churn-Analysis" target="_blank" rel="noopener">GitHub</a></div>
+                <div class="duration">Nov 2024 – Jan 2025</div>
+                <div class="description">
+                    End-to-end data analytics project analyzing telecom customer churn. Performed EDA, wrote 20+ SQL queries for business
+                    questions, and built interactive Tableau dashboards covering churn KPIs, contract type, and service trends.
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="project-title">AI-Powered Learning Path Generator using n8n</div>
+                <div class="tech-stack">n8n, AI Agents, Google Gemini, SerpAPI, REST APIs</div>
+                <div class="duration">Mar 2026 – Present</div>
+                <div class="description">
+                    Built an AI-powered learning path generator using n8n and Google Gemini to create personalized day-wise learning plans.
+                    Integrated SerpAPI, Google Docs, and Google Calendar APIs to automate resource discovery, document generation, and schedule management.
+                </div>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills">
+                <span class="skill">Python</span>
+                <span class="skill">Java</span>
+                <span class="skill">C</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">React.js</span>
+                <span class="skill">HTML/CSS</span>
+                <span class="skill">Bootstrap</span>
+                <span class="skill">Node.js</span>
+                <span class="skill">Express.js</span>
+                <span class="skill">REST APIs</span>
+                <span class="skill">MySQL</span>
+                <span class="skill">MongoDB</span>
+                <span class="skill">Git/GitHub</span>
+                <span class="skill">DSA</span>
+                <span class="skill">OOPs</span>
+                <span class="skill">DBMS</span>
+                <span class="skill">AI Agents</span>
+                <span class="skill">LLM Applications</span>
+                <span class="skill">Prompt Engineering</span>
+                <span class="skill">Pandas</span>
+                <span class="skill">Tableau</span>
+                <span class="skill">Power BI</span>
+                <span class="skill">n8n</span>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <h2 class="section-title">Certifications</h2>
+            <div class="timeline-item">
+                <div class="cert-name">Full Stack Web Development</div>
+                <div class="cert-org">freeCodeCamp – 2024</div>
+            </div>
+            <div class="timeline-item">
+                <div class="cert-name">React – The Complete Guide</div>
+                <div class="cert-org">Udemy – 2024</div>
+            </div>
+            <div class="timeline-item">
+                <div class="cert-name">The Complete Node.js Developer Course</div>
+                <div class="cert-org">Udemy – 2024</div>
+            </div>
+        </div>
+
+        <div class="glass-card">
+            <h2 class="section-title">Competitive Programming &amp; Technical Activities</h2>
+            <div class="description">
+                Solved 200+ coding problems on competitive programming platforms, focusing on Data Structures and Algorithms.
+                Participated in college-level coding contests and technical problem-solving events.
+                Maintained active GitHub repositories showcasing full-stack and automation-based projects.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
