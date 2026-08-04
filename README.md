@@ -1,101 +1,68 @@
-# 🌟 Naga Vamshi - Portfolio Website
+# Pinneboina Saikeerthi - Portfolio Website
 
-A cutting-edge portfolio website featuring **glassmorphism UI design** and showcasing my work as a Full-stack Developer with 2+ years of experience at Applaud Solutions.
+Student portfolio for a **CSE B.Tech student (Graduating 2027)** with a teal/slate **glassmorphism** UI, focused on full-stack development, AI automation, and data analytics.
 
-![Portfolio Preview](https://img.shields.io/badge/Portfolio-Live-brightgreen?style=for-the-badge)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-## 🎨 Features
+## Features
 
-### ✨ Modern Glassmorphism Design
-- **Animated gradient backgrounds** with continuous color transitions
-- **Frosted glass cards** with backdrop-filter blur effects
-- **Golden accent theme** (#ffd700) throughout the design
-- **Smooth hover animations** and interactive elements
-- **Mobile-first responsive** design
+### Glass UI
+- Animated teal/slate gradient background
+- Frosted glass panels with backdrop blur
+- Soft hover lifts and teal accents (`#2dd4bf`)
+- Responsive layout for desktop and mobile
 
-### 🔧 Professional Sections
-- **📊 Statistics Counter**: Animated metrics (3,500+ hours coding, 15+ projects, 2+ years experience)
-- **💼 Work Experience**: Current role at Applaud Solutions with detailed achievements
-- **🎓 Education & Certifications**: Timeline with MongoDB certification
-- **🚀 Featured Projects**: 
-  - RAG-Powered Chatbot with Document Intelligence
-  - Code Review Bot using n8n Automation  
-  - AWS Bedrock AI Agent Platform
-- **📧 Contact Form**: Working contact integration with glassmorphism styling
+### Sections
+- **About** — Student introduction focused on AI, full-stack, and analytics
+- **Activities** — Volunteer work (RDT) and competitive programming
+- **Education & Certifications** — Parul Institute, intermediate/SSC, freeCodeCamp & Udemy certs
+- **Projects**
+  - [Personalized Multi-Agent Orchestration on Google Workspace](https://github.com/Saikeerthi319/Personalized-Multi-Agent-Orchestration-on-Google-workspace-)
+  - [Telecom Customer Churn Analysis](https://github.com/Saikeerthi319/Telecom-Customer-Churn-Analysis)
+  - AI-Powered Learning Path Generator using n8n
+- **Stats** — 200+ problems solved · 3 featured projects · 45 days volunteering
+- **Contact** — Form + email/phone/location
 
-### 📱 Technical Excellence
-- **SEO Optimized**: Structured data, Open Graph, Twitter Cards
-- **Performance Optimized**: Lazy loading, modern font formats
-- **Cross-browser Compatible**: Chrome, Firefox, Safari, Edge
-- **Print-friendly Resume**: PDF generation ready
+## Technologies Used
 
-## 🛠️ Technologies Used
+- **HTML5** — Semantic structure and SEO meta tags
+- **CSS3** — Glassmorphism, animations, responsive grid/flex
+- **JavaScript / jQuery** — Smooth scroll, modals, counters, contact form
+- **Font Awesome** — Icons
+- **Poppins + Lora** — Custom web fonts
 
-### Frontend
-- **HTML5** - Semantic markup with proper structure
-- **CSS3** - Advanced animations, glassmorphism effects, backdrop-filter
-- **JavaScript (ES5+)** - Interactive animations and form handling
-- **jQuery 2.1.3** - DOM manipulation and smooth scrolling
-
-### Design & Assets
-- **FontAwesome 4.x** - Consistent iconography
-- **Custom Web Fonts** - Lora (serif) + Poppins (sans-serif)
-- **Optimized Images** - Modern formats with lazy loading
-- **Responsive Grid** - Mobile-first approach
-
-### Performance & SEO
-- **Structured Data** - JSON-LD schema for search engines
-- **Meta Optimization** - Complete SEO meta tags
-- **Social Media Ready** - Open Graph and Twitter Card support
-- **Fast Loading** - Optimized assets and efficient CSS
-
-## 📁 Project Structure
+## Project Structure
 
 ```
-portfolio/
-├── index.html          # Main portfolio website
-├── resume.html         # Glassmorphism resume page  
-├── css/               # Stylesheets with glassmorphism themes
-├── js/                # Interactive JavaScript features
-├── fonts/             # Custom web fonts (optimized)
-├── images/            # Project screenshots and profile
-└── docs/              # Documentation files
+profile/
+├── index.html                 # Main portfolio
+├── resume.html                # Glass resume page
+├── Saikeerthi_resumee.pdf     # Downloadable resume
+├── css/                       # Styles (teal/slate glass theme)
+├── js/                        # Interactions
+├── fonts/                     # Web fonts
+└── images/                    # Project images
 ```
 
-> 📖 See [STRUCTURE.md](STRUCTURE.md) for detailed project architecture
+## Quick Links
 
-## 🚀 Live Demo
+- **LinkedIn**: [saikeerthi319](https://linkedin.com/in/saikeerthi319/)
+- **GitHub**: [Saikeerthi319](https://github.com/Saikeerthi319)
+- **Resume (HTML)**: [resume.html](resume.html)
+- **Resume (PDF)**: [Saikeerthi_resumee.pdf](Saikeerthi_resumee.pdf)
 
-🌐 **Visit**: [https://nagavamshi2001.github.io/profile/](https://nagavamshi2001.github.io/profile/)
+## Contact
 
-### Quick Links
-- 📋 **Resume**: [HTML Version](resume.html) | [PDF Download](resume.pdf)
-- 💼 **LinkedIn**: [Naga Vamshi Battu](https://www.linkedin.com/in/naga-vamshi-battu-ba5304221)
-- 💻 **GitHub**: [Nagavamshi10](https://github.com/Nagavamshi10)
+- **Email**: [pinneboinasaikeerthi@gmail.com](mailto:pinneboinasaikeerthi@gmail.com)
+- **Phone**: +91-8106692491
+- **Location**: Vadodara, Gujarat, India
 
-## 📞 Contact
+## Local Preview
 
-- 📧 **Email**: [alroundervamshi@gmail.com](mailto:alroundervamshi@gmail.com)
-- 📱 **Phone**: +91-8688664815
-- 🌍 **Location**: Hyderabad, Telangana, India
-
-## 🎯 Performance Metrics
-
-- ⚡ **Page Load**: < 2 seconds
-- 📱 **Mobile Score**: 95/100
-- ♿ **Accessibility**: WCAG 2.1 compliant
-- 🔍 **SEO Score**: 98/100
+Open `index.html` in a browser, or serve the folder with any static file server.
 
 ---
 
-### 🏆 Achievements Showcased
-
-- **2+ Years** professional experience at Applaud Solutions
-- **15+ Projects** completed including AI/ML integrations
-- **3,500+ Hours** of coding experience
-- **MongoDB Certified** Node.js Developer
-
-**🔗 Made with ❤️ using modern web technologies and glassmorphism design principles**
+Built for Saikeerthi’s student portfolio with a modern glass UI.
